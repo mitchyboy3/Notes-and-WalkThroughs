@@ -1,4 +1,3 @@
-###HEROKU SETUP### 
 
 #Host your Database
 Before you can host your server you need a hosted database. 
@@ -60,8 +59,7 @@ Using it allows you to specify both enviornmental variables as well as local var
 #To make your ENV vaiables work on loval development
 You can also set up your development envoirnment to provide your enviormental variables locally.
 
-(mac set enviormental variables)
-terminal$ export facebookId=587642987356 to work on your local machine. 
+`apiKey=j83kgl9s8b node index.js`
 
 
 #set up your package.json 
