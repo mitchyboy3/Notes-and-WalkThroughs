@@ -1,17 +1,16 @@
 
 #Host your Database
-Before you can host your server you need a hosted database. 
+Before you can host your server you need a hosted database that is set up and functional. 
 You can do a free 'tiny turtle' plan from elephantSQL https://www.elephantsql.com/
  - create an account
  - elephantsql will give you a new connectionString `URL` We will need this later. 
  - set up your DB and create your tables ext...
   - you can do this by either
-    1. clicking the brower tab and recreating your DB
-    2. or exporting your old DB as CSB file and upload it to your new DB
+    1. clicking the browser tab and recreating your DB
+    2. or export your old DB as CSV file and upload it to your new DB
     3. or if you have a default schema SQL file, you can simply run that to recreate all your tables after you connect your new connection string.
  
-Have this database set up and functional before hosting your server. 
-
+###App configuration
 If you are using MassiveDB, Your life will be simplified if you put your db folder at the root level of your app. 
 
 #Create Heroku Account
