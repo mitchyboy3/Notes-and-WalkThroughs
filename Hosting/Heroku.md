@@ -3,11 +3,16 @@
 Before you can host your server you need a hosted database. 
 You can do a free 'tiny turtle' plan from elephantSQL https://www.elephantsql.com/
  - create an account
+ - elephantsql will give you a new connectionString `URL` We will need this later. 
  - set up your DB and create your tables ext...
- - elephantsql will give you a new connectionString. We will need this later. 
+  - you can do this by either
+    1. clicking the brower tab and recreating your DB
+    2. or exporting your old DB as CSB file and upload it to your new DB
+    3. or if you have a default schema SQL file, you can simply run that to recreate all your tables after you connect your new connection string.
+ 
 Have this database set up and functional before hosting your server. 
 
-Your life will be simplified if you put your db folder at the root level of your app. 
+If you are using MassiveDB, Your life will be simplified if you put your db folder at the root level of your app. 
 
 #Create Heroku Account
 - Create a heroku account   https://www.heroku.com/
@@ -56,7 +61,7 @@ Notice the use of the "or" ||
 Using it allows you to specify both enviornmental variables as well as local variables. In this example the port will be specified by heroku when hosted, but default to 3000 when you're running locally. 
 
 
-#To make your ENV vaiables work on loval development
+##To make your ENV vaiables work on local development
 You can also set up your development envoirnment to provide your enviormental variables locally.
 
 `apiKey=j83kgl9s8b node index.js`
