@@ -1,8 +1,5 @@
 
-## Electron App ## 
-
-
-
+# Electron App 
 
 ```javascript
 const {app, BrowserWindow} = require('electron')
@@ -65,7 +62,7 @@ app.on('activate', () => {
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "asar": "^0.12.3", //This is for building .exe apps. 
+    "asar": "^0.12.3", //This is for building .exe apps. You also have to install wine-bottle globally. Google it. 
     "babel": "^6.5.2",
     "babel-core": "^6.17.0",
     "chart.js": "*",
