@@ -94,4 +94,4 @@ Inside of your procfile, the fallowing code, replacing index.js with the name of
  - after it is finished building you can check to see the status of your app by typing
  - `heroku logs --tail`
  - either your logs will report "state changed from starting to up" or "state changed from starting to crashed". If the app crashed, you will have to debug. Otherwise you are good to go! Find your url on the settings tab of your heoku dashboard online.  
- 
+
