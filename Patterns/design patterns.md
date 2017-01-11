@@ -19,3 +19,6 @@ Rather than thinking of object behaviors as a set of behaviors, we think of them
 3. Favor composition (behavior being composed with the right behavior objec) over inheritance.
 Creating systems using composition gives you more flexibility. Not only does it let you encapsulate a family of algorithms into their own set of classes but it also lets you change behavior at runtime. 
 Composition is used in MANY design patters. 
+
+When you’re working with data about people, FP works well. 
+When you’re trying to simulate people, OOP works well. 
