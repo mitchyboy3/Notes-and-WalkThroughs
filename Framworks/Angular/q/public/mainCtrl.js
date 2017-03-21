@@ -11,9 +11,11 @@
 
 
 // function add(val1, val2, cb){
+
 //   setTimeout(function(){
 //     cb(val1 + val2)
 //   }, 500)
+
 // }
 
 // add(1, 2, function(val){
@@ -40,35 +42,49 @@
 
  //Promise Chaining  
     
-      function otheradd(val1, val2){
-
+      function myFunction(val1, val2){
         var defered = $q.defer()
-
         setTimeout(function(){
           defered.resolve(val1 + val2);
-        }, 500)
-
-
+        }, 100)
         return defered.promise
       }
 
 
-otheradd(5, 5)
-.then(function(result){
-  console.log('step 1')
-  return otheradd(result, 10)
+
+
+
+
+myFunction(5, 5)
+.then(function(response){
+  return response
 })
-.then(function(result){
-  console.log('step 2')
-  return otheradd(result, 30)
+.then(function(response2){
+  return myFunction(response2, 5)
 })
-.then(function(result){
-  console.log('step 3')
-  return otheradd(result, 50)
+.then(function(finalResponse){
+  return finalResponse
 })
-.then(function(result){
-  console.log(result)
-})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

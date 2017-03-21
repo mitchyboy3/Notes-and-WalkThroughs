@@ -1,5 +1,5 @@
 #The Strategy Patern 
-The strategy pattern defines a family of algorithms, encapsulates each one and makes them interchangable. Trategy lets the algorithm vary independantly from clients that use it.
+The strategy pattern defines a family of algorithms, encapsulates each one and makes them interchangable. strategy lets the algorithm vary independantly from clients that use it.
 
 1. Identify the aspects of your app that vary and separate them from what stays the same.
 Take what varies and encapsulate it so it doesnt affect the rest of your code.
